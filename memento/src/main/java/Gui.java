@@ -55,10 +55,13 @@ public class Gui extends Application {
 
         Button stateHistoryButton = new Button("Display State History");
         stateHistoryButton.setOnAction(actionEvent -> displayStateHistory());
-        stateHistoryButton.setPadding(insets);
+
+        VBox historyButtonBox = new VBox();
+        historyButtonBox.setPadding(insets);
+        historyButtonBox.getChildren().addAll(stateHistoryButton);
 
         // create a VBox that contains the HBox and the CheckBox
-        VBox vBox = new VBox(hBox, checkBox, labelUndo, labelRedo,stateHistoryButton);
+        VBox vBox = new VBox(hBox, checkBox, labelUndo, labelRedo, historyButtonBox);
 
         // call controller when the CheckBox is clicked
         checkBox.setOnAction(event -> {
