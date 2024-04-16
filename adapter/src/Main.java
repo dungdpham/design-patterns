@@ -5,9 +5,9 @@ public class Main {
         System.out.println("Today: " + calendarAdapter.getDay() + "." + calendarAdapter.getMonth() +
                 "." + calendarAdapter.getYear());
 
-        calendarAdapter.setDay(1);
-        calendarAdapter.setMonth(5);
-        calendarAdapter.setYear(2024);
+        calendarAdapter.setDay(4);
+        calendarAdapter.setMonth(1);
+        calendarAdapter.setYear(2025);
         System.out.println("Calendar set to: " + calendarAdapter.getDay() + "." + calendarAdapter.getMonth() +
                 "." + calendarAdapter.getYear());
 

@@ -2,6 +2,7 @@ import java.util.Calendar;
 
 public class CalendarToNewDateAdapter implements NewDateInterface {
     private Calendar calendar;
+
     public CalendarToNewDateAdapter() {
         this.calendar = Calendar.getInstance();
     }
