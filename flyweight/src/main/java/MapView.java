@@ -7,7 +7,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class MapView extends Application {
-    private static final int TILE_SIZE = 64;
+    private static final int TILE_SIZE = 32;
     private Controller controller = new Controller();
     private final int CANVAS_WIDTH = controller.getGridWidth() * TILE_SIZE;
     private final int CANVAS_HEIGHT = controller.getGridHeight() * TILE_SIZE;

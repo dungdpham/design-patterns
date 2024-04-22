@@ -1,5 +1,4 @@
 public abstract class Map {
-
     public Tile[][] createMap(int row, int column) {
         Tile[][] tiles = new Tile[row][column];
 

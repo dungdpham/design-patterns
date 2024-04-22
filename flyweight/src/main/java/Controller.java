@@ -15,7 +15,7 @@ public class Controller {
         tileImages = new TileImage[GRID_HEIGHT][GRID_WIDTH];
         for (int i = 0; i < GRID_HEIGHT; i++) {
             for (int j = 0; j < GRID_WIDTH; j++) {
-                tileImages[i][j] = TileImageFactory.getTileImage(tiles[i][j].getType());
+                tileImages[i][j] = TileImageFactory.getTileImage(tiles[i][j]);
             }
         }
     }
